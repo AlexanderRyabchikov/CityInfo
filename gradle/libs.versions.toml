@@ -1,0 +1,108 @@
+[versions]
+agp = "9.2.1"
+coreKtx = "1.19.0"
+junit = "4.13.2"
+junitVersion = "1.3.0"
+espressoCore = "3.7.0"
+appcompat = "1.7.1"
+material = "1.14.0"
+koin = "4.2.2"
+ktor = "3.5.1"
+orbit = "12.0.0"
+composeBom = "2026.06.01"
+kotlin = "2.4.10"
+paging = "3.5.0"
+lifecycle = "2.11.0-beta01"
+cache4k = "0.14.0"
+composeScreenshot = "0.0.1-alpha16"
+
+yandexMaps = "4.19.0-full"
+atomicfu = "0.25.0"
+
+[libraries]
+
+gradle-compose = { module = "org.jetbrains.kotlin:compose-compiler-gradle-plugin", version.ref = "kotlin" }
+gradle-kotlin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+gradle-android = { module = "com.android.tools.build:gradle", version.ref = "agp" }
+
+gradle-compose-screenshot = { module = "com.android.compose.screenshot:com.android.compose.screenshot.gradle.plugin", version.ref = "composeScreenshot" }
+
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+
+kotlin-coroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version = "1.11.0" }
+kotlin-serialx = { module = "org.jetbrains.kotlin:kotlin-serialization", version.ref = "kotlin" }
+kotlin-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version = "1.11.0" }
+
+koin-core = { module = "io.insert-koin:koin-core", version.ref = "koin" }
+koin-android = { module = "io.insert-koin:koin-android", version.ref = "koin" }
+koin-compose = { module = "io.insert-koin:koin-androidx-compose", version.ref = "koin" }
+koin-navigation = { module = "io.insert-koin:koin-androidx-compose-navigation", version.ref = "koin" }
+
+ktor-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
+ktor-cio = { module = "io.ktor:ktor-client-cio", version.ref = "ktor" }
+ktor-android = { module = "io.ktor:ktor-client-android", version.ref = "ktor" }
+ktor-negotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktor" }
+ktor-logging = { module = "io.ktor:ktor-client-logging", version.ref = "ktor" }
+ktor-json = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor" }
+ktor-okhttp = { module = "io.ktor:ktor-client-okhttp", version.ref = "ktor" }
+
+yandex-maps = { module = "com.yandex.android:maps.mobile", version.ref = "yandexMaps" }
+atomicfu = { module = "org.jetbrains.kotlinx:atomicfu", version.ref = "atomicfu" }
+
+androidx-browser = { module = "androidx.browser:browser", version = "1.10.0" }
+
+androidx-compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling" }
+
+androidx-compose-bom = { module = "androidx.compose:compose-bom", version.ref = "composeBom" }
+androidx-compose-ui = { module = "androidx.compose.ui:ui" }
+androidx-compose-foundation = { module = "androidx.compose.foundation:foundation" }
+androidx-compose-runtime = { module = "androidx.compose.runtime:runtime" }
+androidx-compose-ui-graphics = { module = "androidx.compose.ui:ui-graphics" }
+androidx-compose-ui-util = { module = "androidx.compose.ui:ui-util" }
+androidx-compose-preview = { module = "androidx.compose.ui:ui-tooling-preview" }
+androidx-compose-material2 = { module = "androidx.compose.material:material" }
+androidx-compose-material3 = { module = "androidx.compose.material3:material3" }
+androidx-compose-activity = { module = "androidx.activity:activity-compose" }
+androidx-lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycle" }
+
+androidx-compose-navigation = { module = "androidx.navigation:navigation-compose", version = "2.9.8" }
+androidx-compose-material-navigation = { module = "androidx.compose.material:material-navigation", version = "1.11.4" }
+
+androidx-compose-constraints = { module = "androidx.constraintlayout:constraintlayout-compose", version = "1.1.1" }
+androidx-constraint = { module = "androidx.constraintlayout:constraintlayout", version = "2.2.1" }
+
+orbit-mvi = { module = "org.orbit-mvi:orbit-viewmodel", version.ref = "orbit" }
+orbit-compose = { module = "org.orbit-mvi:orbit-compose", version.ref = "orbit" }
+
+cache = { module = "io.github.reactivecircus.cache4k:cache4k", version.ref = "cache4k" }
+
+paging-runtime = { module = "androidx.paging:paging-runtime", version.ref = "paging" }
+paging-compose = { module = "androidx.paging:paging-compose", version.ref = "paging" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+kotlin-serialx = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+
+setup-android-application = { id = "android-application-setup", version = "1.0.0" }
+setup-android-library = { id = "android-library-setup", version = "1.0.0" }
+setup-compose-library = { id = "compose-library-setup", version = "1.0.0" }
+setup-feature-api = { id = "feature-setup-api", version = "1.0.0" }
+setup-feature-ui = { id = "feature-setup-ui", version = "1.0.0" }
+
+[bundles]
+gradle-plugins = [
+    "gradle-kotlin",
+    "gradle-android",
+    "gradle-compose",
+    "kotlin-serialx",
+]
+
+
+

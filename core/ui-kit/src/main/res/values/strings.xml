@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="internet_connection_error_title">Нет подключения к интернету</string>
+    <string name="internet_connection_error_desc">Проверьте соединение и попробуйте снова. Без интернета данные не загрузятся</string>
+
+    <string name="common_error_title">Что-то пошло не так</string>
+    <string name="common_error_desc">По какой-то причине мы не смогли \nзагрузить контент на этой странице. \nПопробуйте еще раз или зайдите позже</string>
+
+    <string name="error_button_reply_title">Попробовать снова</string>
+</resources>

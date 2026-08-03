@@ -1,0 +1,12 @@
+package config
+
+object ApkConfig {
+    const val APPLICATION_ID = "cityinfo.io"
+
+    const val MIN_SDK_VERSION = 28
+    const val TARGET_SDK_VERSION = 36
+    const val COMPILE_SDK_VERSION = 37
+
+    const val VERSION_CODE = 1
+    const val VERSION_NAME = "1.0.0"
+}

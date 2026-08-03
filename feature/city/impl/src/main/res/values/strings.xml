@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="city_list_title">Список городов</string>
+    <string name="city_list_search_hint">Введите название города</string>
+    <string name="city_list_empty_title">Ничего не найдено</string>
+    <string name="city_list_empty_desc">Проверьте правильность написания города</string>
+
+    <string name="city_detail_title">Информация о городе</string>
+    <string name="city_detail_title_city_name">Город</string>
+    <string name="city_detail_title_country">Страна</string>
+    <string name="city_detail_title_population">Население</string>
+    <string name="city_detail_population_value">%1$s чел</string>
+
+    <string name="city_detail_search_info_button">Поиск информации о городе</string>
+</resources>

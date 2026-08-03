@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="city_map_title_city_name">Город</string>
+    <string name="city_map_title_country">Страна</string>
+    <string name="city_map_title_population">Население</string>
+    <string name="city_map_population_value">%1$s чел</string>
+
+    <string name="city_map_search_info_button">Поиск информации о городе</string>
+</resources>
