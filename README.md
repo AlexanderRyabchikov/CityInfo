@@ -118,10 +118,14 @@ cd CityInfo
 ./gradlew :app:assembleDebug
 ```
 
-Перед сборкой нужно задать два параметра:
+Перед сборкой скопируйте `local.properties.example` в `local.properties` и заполните два поля:
 
-- **Ключ Yandex MapKit** — `feature/map/impl/.../interactors/MapManagerImpl.kt`
-- **Базовый URL API** — `core/network/.../DiNetwork.kt`
+```properties
+YANDEX_MAP_KEY=<ключ Yandex MapKit>
+API_BASE_URL=<хост бэкенда, например api.example.com:8080>
+```
+
+Значения попадают в `BuildConfig` на этапе сборки, сам `local.properties` в репозиторий не коммитится. Вместо файла можно задать те же переменные окружения — так собирается CI.
 
 Бэкенд в репозиторий не входит. Ожидаемый контракт:
 

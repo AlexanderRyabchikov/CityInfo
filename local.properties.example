@@ -1,0 +1,8 @@
+# Скопируйте в local.properties и подставьте свои значения.
+# local.properties в git не попадает.
+
+# Ключ Yandex MapKit: https://developer.tech.yandex.ru/
+YANDEX_MAP_KEY=
+
+# Хост бэкенда без схемы, например: api.example.com:8080
+API_BASE_URL=
