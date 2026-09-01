@@ -10,7 +10,7 @@ private val ktorClient: Module = module {
         HttpClient(OkHttp.create{}) {
             expectSuccess = true
             installJson()
-            installDefaultRequest(baseUrl = "dev-dep.tools.urent.tech:8080")
+            installDefaultRequest(baseUrl = BuildConfig.API_BASE_URL)
             installTimeOut()
             installLogger()
         }
